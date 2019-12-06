@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\App\app.component.ts" />
+    <None Remove="ClientApp\App\app.module.ts" />
+    <None Remove="ClientApp\main.ts" />
+    <None Remove="ClientApp\Models\product.ts" />
+    <None Remove="ClientApp\polyfills.ts" />
+    <None Remove="ClientApp\Services\data.service.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\App\app.component.ts" />
+    <TypeScriptCompile Include="ClientApp\App\app.module.ts" />
+    <TypeScriptCompile Include="ClientApp\main.ts" />
+    <TypeScriptCompile Include="ClientApp\Models\product.ts" />
+    <TypeScriptCompile Include="ClientApp\polyfills.ts" />
+    <TypeScriptCompile Include="ClientApp\Services\data.service.ts" />
+  </ItemGroup>
+
+</Project>
